@@ -1,0 +1,4 @@
+filename : output.pdf
+Number of JavaScript objects : 1
+JavaScript objects found : 
+COSString{console.println('Hello, this is a super world'); app.alert("ALERT UN VIRUS A ETE DETECTE!");}

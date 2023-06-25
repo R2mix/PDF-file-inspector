@@ -1,0 +1,13 @@
+java --module-path hellofx\lib\javafx-sdk-17.0.7\lib --add-modules javafx.controls,javafx.fxml -jar dialogfx.jar
+
+jlink --launcher dialogfx=launch.bat --output dialogfx-image --add-modules javafx.controls
+
+
+jpackage --input target/ \
+  --name dialogfx \
+  --main-jar dialogfx.jar \
+  --main-class hellofx\\App \
+  --type exe \
+  --java-options '--enable-preview'
+
+  jpackage --input "C:\Users\r2mix\Desktop\dialogfx\dialogfx.jar" --main-jar dialogfx.jar --name dialogfx.exe --output buildout
